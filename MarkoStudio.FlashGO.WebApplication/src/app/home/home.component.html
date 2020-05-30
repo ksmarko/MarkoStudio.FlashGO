@@ -1,1 +1,18 @@
-<p>home works!</p>
+<button class="btn btn-success" (click)="addRandomValue()">Create</button>
+<div *ngFor="let record of records">
+    <div class="row mt-4">
+        <div class="col">
+          <div class="card">
+            <h3>{{record.front.term}}</h3>
+            <p>{{record.front.transcription}}</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h3>{{record.back.translation}}</h3>
+            <p> {{record.back.definition}} </p>
+            <p> {{record.back.example}} </p>
+          </div>
+        </div>
+      </div>
+</div>

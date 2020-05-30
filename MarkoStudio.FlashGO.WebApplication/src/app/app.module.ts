@@ -10,6 +10,7 @@ import { environment } from '../environments/environment';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { DataFetchService } from './services/data-fetch.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { HomeComponent } from './home/home.component';
       { path: '', component: HomeComponent, pathMatch: 'full' }
     ])
   ],
-  providers: [],
+  providers: [
+    DataFetchService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
