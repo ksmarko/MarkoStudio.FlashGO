@@ -1,9 +1,17 @@
-// This file can be replaced during build by using the `fileReplacements` array.
+  // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCOspNpVuxztKsU7rT2WRBdDSPuuh5mzCg",
+    authDomain: "flashgo-3b858.firebaseapp.com",
+    databaseURL: "https://flashgo-3b858.firebaseio.com",
+    projectId: "flashgo-3b858",
+    storageBucket: "",
+    messagingSenderId: "631936444041"
+  }
 };
 
 /*
